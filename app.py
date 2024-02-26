@@ -28,7 +28,7 @@ app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 app.secret_key= 'ca2'
 
-sender = 'youremailsender@abc.com'
+sender = 'cianci.antonio693@gmail.com'
 
 mysql = MySQL(app)
 
@@ -82,7 +82,7 @@ def lostpassword():
 			server.ehlo()
 			server.starttls()
 			server.ehlo()
-			server.login('youremail@gmail.com', 'password')
+			server.login('cianci.antonio693@gmail.com', 'password')
 			sesOTPfp = generateOTP()
 			session['tempOTPfp'] = sesOTPfp
 			session['seslpemail'] = lpemail
